@@ -1,14 +1,10 @@
-header {
-  font-weight: 400;
-  font-size: 18px;
-}
-
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   width: 1052px;
-  height: 105px;
   margin: 92px 24px 95px;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .header__menu-list {
@@ -17,19 +13,21 @@ header {
   padding: 43px 42px 0 26.52px;
 }
 
-.header__menu-item {
+.header__links-list-item {
   list-style: circle;
 }
 
-.adress__link {
+.links-list-item_no-bullit {
+  list-style: none;
+}
+
+.link {
   border-bottom: 1.5px solid;
   text-decoration: none;
 }
 
-.header__menu-item_active {
-  letter-spacing: 0%;
-  text-decoration: none;
-  list-style: none;
+.link_active {
+  border-bottom: none;
 }
 
 .header__logo {
@@ -42,20 +40,22 @@ header {
   height: 100%;
 }
 
-.header__address {
+.address {
   display: flex;
   flex-direction: column;
-  justify-self: end;
   width: 240.52px;
-  height: 98px;
-  margin-top: 5px;
-  margin-right: 24px;
   font-size: 18px;
   font-style: normal;
   line-height: 24px;
 }
 
-.header__address-list {
+.header__address-margin {
+  margin-top: 5px;
+  margin-right: 24px;
+  justify-self: end;
+}
+
+.address-list {
   list-style: none;
 }
 
@@ -162,9 +162,8 @@ header {
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
-  height: 100%;
-  min-height: 563px;
   list-style: none;
 }
 
@@ -273,14 +272,16 @@ header {
   text-transform: uppercase;
 }
 
-.about__text {
+.about__text-container {
   padding-top: 100px;
-  font-weight: 400;
-  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.about__text-bottom {
-  padding-top: 24px;
+.about__text {
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .footer {
@@ -289,18 +290,9 @@ header {
   padding: 150px 50px 86px;
 }
 
-.footer__address {
-  display: flex;
-  width: 240.52px;
-  height: 130px;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 24px;
-}
-
-.footer__address-list {
+.footer__address-padding {
   padding-top: 31px;
-  list-style: none;
+  height: 130px;
 }
 
 .footer__menu-list {
@@ -318,14 +310,8 @@ header {
 }
 
 .footer__menu-item_active {
-  letter-spacing: 0%;
   text-decoration: none;
   list-style: none;
-}
-
-.footer__link {
-  border-bottom: 1.5px solid;
-  text-decoration: none;
 }
 
 .footer__social-list {
@@ -339,8 +325,4 @@ header {
 .footer__social-list-item {
   width: 48px;
   height: 48px;
-}
-
-.footer__social-icon {
-  size: 100%;
 }

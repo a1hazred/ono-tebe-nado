@@ -13,18 +13,18 @@
     <header class="header">
       <nav>
         <ul class="header__menu-list">
-          <li class="header__menu-item header__menu-item_active">
-            <a>
+          <li class="header__links-list-item links-list-item_no-bullit">
+            <a class="link link_active" href="#">
               главная
             </a>
           </li>
-          <li class="header__menu-item">
-            <a class="adress__link" href="#">
+          <li class="header__links-list-item">
+            <a class="link" href="#">
               посмотреть лоты
             </a>
           </li>
-          <li class="header__menu-item">
-            <a class="adress__link" href="#">
+          <li class="header__links-list-item">
+            <a class="link" href="#">
               об аукционе
             </a>
           </li>
@@ -33,54 +33,50 @@
       <a class="header__logo">
         <img class="header__logo-image" src="./images/logo-black.svg" alt="оно тебе надо"/>
       </a>
-      <address class="header__address">
-        <ul class="header__address-list">
-          <li>
-            <a class="adress__link" href="#">
+      <address class="address header__address-margin">
+        <div class="address-list">
+          <a class="link" href="tel:+99995555555">
               +9 999 555 5555
-            </a>
-          </li>
-          <li>
-            <a class="adress__link" href="#">
+          </a>
+          <a class="link" href="mailto:info@sobaka.ge">
               info@sobaka.ge
-            </a>
-          </li>
-          <li>
+          </a>
+          <p>
             наб. Принсенграхт 263- 265, Амстердам
-          </li>
-        </ul>
+          </p>
+        </div>
       </address>
     </header>
     <main>
       <section class="cover">
         <div class="overlay"></div>
-        <h1 class="cover__title">
-          <span class="aligned-text">
-            он
-            <span class="aligned-symbol">
-              о
+          <h1 class="cover__title">
+            <span class="aligned-text">
+              он
+              <span class="aligned-symbol">
+                о
+              </span>
             </span>
-          </span>
-          <span class="aligned-text_center">
+            <span class="aligned-text_center">
             <span class="aligned-symbol_center">
               теб
             </span>
             <span class="aligned-symbol_center">
               е
             </span>
-          </span>
-          <span class="aligned-text_right">
+            </span>
+            <span class="aligned-text_right">
             <span class="aligned-symbol_right">
               н
             </span>
             адо
-          </span>
-        </h1>
+            </span>
+          </h1>
         <div class="cover__description">
           <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
           </p>
-          <button class="bet-button">
+          <button type="button" class="bet-button">
             Сделать ставку
           </button>
         </div>
@@ -136,55 +132,53 @@
       </section>
       <section class="about">
         <div class="about__logo-column">
-          <a class="about__logo">
+          <div class="about__logo">
             <img class="about__logo-image" src="./images/logo-white.svg" alt="оно тебе надо"/>
-          </a>
+          </div>
         </div>
         <div class="about__text-column">
-          <h4 class="about__title">
+          <h2 class="about__title">
             Об аукционе
-          </h4>
-          <p class="about__text">
-            Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть<br>ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
-          </p>
-          <p class="about__text about__text-bottom">
-            Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря<br>на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. 
-          </p>
+          </h2>
+            <div class="about__text-container">
+              <p class="about__text">
+                Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть<br>ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
+              </p>
+              <p class="about__text">
+                Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря<br>на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. 
+              </p>
+            </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <address class="footer__address">
-        <ul class="footer__address-list">
-          <li>
-            <a class="adress__link" href="#">
-              +9 999 555 5555
-            </a>
-          </li>
-          <li>
-            <a class="adress__link" href="#">
-              info@sobaka.ge
-            </a>
-          </li>
-          <li>
+      <address class="address footer__address-padding">
+        <div class="address-list">
+          <a class="link" href="tel:+99995555555">
+            +9 999 555 5555
+          </a>
+          <a class="link" href="mailto:info@sobaka.ge">
+            info@sobaka.ge
+          </a>
+          <p>
             наб. Принсенграхт 263- 265, Амстердам
-          </li>
-        </ul>
+          </p>
+        </div>
       </address>
       <nav>
         <ul class="footer__menu-list">
-          <li class="footer__menu-item header__menu-item_active">
-            <a>
+          <li class="footer__menu-item">
+            <a class="link link_active" href="#">
               главная
             </a>
           </li>
           <li class="footer__menu-item">
-            <a class="footer__link" href="#">
+            <a class="link" href="#">
               посмотреть лоты
             </a>
           </li>
           <li class="footer__menu-item">
-            <a class="footer__link" href="#">
+            <a class="link" href="#">
               об аукционе
             </a>
           </li>
@@ -193,17 +187,17 @@
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
           <a href="#">
-            <img class="footer__social-icon" src="./images/yt.svg" alt="ссылка YouTube"/>
+            <img src="./images/yt.svg" alt="ссылка YouTube"/>
           </a> 
         </li>
         <li class="footer__social-list-item">
           <a href="#">
-            <img class="footer__social-icon" src="./images/vk.svg" alt="ссылка VKontakte"/>
+            <img src="./images/vk.svg" alt="ссылка VKontakte"/>
           </a> 
         </li>
         <li class="footer__social-list-item">
           <a href="#">
-            <img class="footer__social-icon" src="./images/pinterest.svg" alt="ссылка Pinterest"/>
+            <img src="./images/pinterest.svg" alt="ссылка Pinterest"/>
           </a> 
         </li>
       </ul>
